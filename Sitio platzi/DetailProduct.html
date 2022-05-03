@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>queso</title>
+    <style>
+        :root{
+            --verify-light-pink: #C7C7C7;
+            --white: #FFFFFF;
+            --black: #000000;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .primary-button {
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pinter;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+            margin-top: 14px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-detail {
+            width: 360px;
+            padding-bottom: 24px;
+        }
+        .product-detail > img:nth-child(1)
+        {
+            position: absolute;
+            top: 12px;
+            left: 12px;  
+        }
+
+        .product-detail > img:nth-child(1):hover {
+            cursor: pointer;
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+       
+    </style>
+    
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="close">
+
+        
+        <img src="./logos/icons/icon_close.png" alt="close">
+         </div>
+        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg"
+        alt="cat">
+        <div class="product-info">
+            <p>$35,00
+            </p>
+            <p>Gato</p>
+            <p> es un gato con cola y ojos azules y ademas es amigo de la italita y del manchas</p>
+        </div>
+        <button class="primary-button add-to-cart-button">
+            <img src="./logos/icons/bt_add_to_cart.svg" alt="add-to-cart"> 
+            Add to cart
+        </button>
+        </aside>
+
+
+</body>
+</html>
